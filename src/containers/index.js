@@ -1,11 +1,30 @@
 import React, { Component } from 'react';
+import PureFullPage from './pureFullPage';
 
 export default class Main extends Component {
+  constructor(props, context) {
+    super(props, context);
+    this.state = {
+      // todos: []
+    };
+  }
+
+  componentDidMount() {
+    new PureFullPage().init();
+  }
+
   render() {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <h2>Hello, I`m ReactMaker.</h2>
-        <p>To get started, edit containers/index.js</p>
+      <div id="pureFullPage">
+        <div className="page">
+          <p> Page 1 </p>
+        </div>
+        <div className="page">
+          <p> Page 2 </p>
+        </div>
+        <div className="page">
+          <p> Page 3 </p>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,47 @@
+// @import 'normalize-scss/sass/_normalize.scss';
+@import './_pureFullPage.scss';
+@import './_mixin.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Questrial', '微軟正黑體', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  // outline: solid 1px red
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page p {
+  font-size: 66px;
+}
+
+.page:nth-child(1) {
+  background: lightpink no-repeat center/cover;
+}
+
+.page:nth-child(2) {
+  background: lightgreen no-repeat center/cover;
+}
+
+.page:nth-child(3) {
+  background: lightskyblue no-repeat center/cover;
+}
