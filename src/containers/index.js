@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import PureFullPage from './pureFullPage';
+import PureFullPage from './fullpagePackage/pureFullPage';
+import PageTitle from './App/PageTitle';
 
 export default class Main extends Component {
   constructor(props, context) {
@@ -16,15 +17,13 @@ export default class Main extends Component {
   render() {
     return (
       <div id="pureFullPage">
-        <div className="page">
-          <p> Page 1 </p>
-        </div>
-        <div className="page">
+        <PageTitle />
+        <section className="page">
           <p> Page 2 </p>
-        </div>
-        <div className="page">
+        </section>
+        <section className="page">
           <p> Page 3 </p>
-        </div>
+        </section>
       </div>
     );
   }

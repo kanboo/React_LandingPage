@@ -63,10 +63,10 @@ const utils = {
           return to;
         },
         writable: true,
-        configurable: true,
+        configurable: true
       });
     }
-  },
+  }
 };
 
 module.exports = utils;
