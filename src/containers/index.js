@@ -10,6 +10,7 @@ import './scss/style.scss';
 
 import PureFullPage from './FullPagePackage/pureFullPage';
 import PageTitle from './App/PageTitle';
+import DailyUI from './App/DailyUI';
 
 fontawesome.library.add(brands, solids);
 
@@ -29,9 +30,8 @@ export default class Main extends Component {
     return (
       <div id="pureFullPage">
         <PageTitle />
-        <section className="page">
-          <p> Page 2 </p>
-        </section>
+        <DailyUI />
+
         <section className="page">
           <p> Page 3 </p>
         </section>

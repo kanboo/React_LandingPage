@@ -28,22 +28,34 @@ body {
   justify-content: center;
 }
 
-.page:nth-child(2) {
-  background: lightgreen no-repeat center/cover;
-}
-
-.page:nth-child(3) {
-  background: lightskyblue no-repeat center/cover;
-}
-
-
-#PageTitle {
-  // +flex(column, center);
-  background-image: url(https://images.unsplash.com/photo-1453195644148-563910c91cf7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c09cc686feda9ad5602f02a3bbeea7cc&auto=format&fit=crop&w=1650&q=80);
+.page:nth-child(1) {
+  background-image: url(../img/bg_pagetitle.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.page:nth-child(2) {
+  // background: lightgreen no-repeat center/cover;
+  background-image: url(https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&s=ce32af2267a9ebd8e2e7bce30a59891f&auto=format&fit=crop&w=1650&q=80);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page:nth-child(3) {
+  // background: lightskyblue no-repeat center/cover;
+  background-image: url(https://images.unsplash.com/photo-1457365050282-c53d772ef8b2?ixlib=rb-0.3.5&s=93658afa8c1956aac673b2c37efb516e&auto=format&fit=crop&w=1650&q=80);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+#PageTitle {
   color: #ffffff;
 
   @include flex(column, center);
@@ -101,5 +113,38 @@ body {
   .bounce {
     transform-origin: center bottom;
     animation-name: bounce;
+  }
+}
+
+
+#DailyUI {
+  .container {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    @include flex(row, center);
+    @include size(100%);
+
+    .sectionTitle {
+      position: relative;
+      padding: 30px;
+      width: 50%;
+      // height: 100vh;
+      outline: 1px solid red;
+      color: #fff;
+
+      @include flex(column, center);
+
+      p {
+        width: 400px;
+      }
+    }
+
+    .cards {
+      width: 50%;
+      height: 100vh;
+      outline: 1px solid blue;
+
+      @include flex(column, center);
+    }
   }
 }
