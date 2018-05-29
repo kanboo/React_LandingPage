@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import './css/style.scss';
+
 
 const render = () => {
   const Main = require('containers').default;

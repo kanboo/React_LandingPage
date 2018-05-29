@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
-import PureFullPage from './fullpagePackage/pureFullPage';
+
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import brands from '@fortawesome/fontawesome-free-brands';
+import solids from '@fortawesome/fontawesome-free-solid';
+
+import 'animate.css/animate.min.css';
+import './scss/style.scss';
+
+import PureFullPage from './FullPagePackage/pureFullPage';
 import PageTitle from './App/PageTitle';
+
+fontawesome.library.add(brands, solids);
 
 export default class Main extends Component {
   constructor(props, context) {

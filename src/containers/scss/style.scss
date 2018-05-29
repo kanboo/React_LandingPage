@@ -1,4 +1,4 @@
-// @import 'normalize-scss/sass/_normalize.scss';
+@import url('https://fonts.googleapis.com/css?family=Courgette|Lobster');
 @import './_pureFullPage.scss';
 @import './_mixin.scss';
 
@@ -22,16 +22,10 @@ body {
   // outline: solid 1px red
 }
 
-
-
 .page {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.page:nth-child(1) {
-  background: lightpink no-repeat center/cover;
+  justify-content: center;
 }
 
 .page:nth-child(2) {
@@ -44,60 +38,68 @@ body {
 
 
 #PageTitle {
-  @include flex(column, center);
   // +flex(column, center);
   background-image: url(https://images.unsplash.com/photo-1453195644148-563910c91cf7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c09cc686feda9ad5602f02a3bbeea7cc&auto=format&fit=crop&w=1650&q=80);
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #ffffff;
+
+  @include flex(column, center);
 
   .container {
     width: 960px;
   }
+
   h1 {
     font-size: 3.25em;
+    .myname {
+      font-size: 4.5rem;
+      font-family: 'Lobster', cursive;
+    }
 
     &::after {
-      content: '';
-      background-color: #ffffff;
       display: block;
+      margin: .5em 0 .5em 0;
+      width: 590px;
       height: 2px;
-      margin: .325em 0 .5em 0;
-      width: 575px;
+      background-color: #ffffff;
+      content: '';
     }
   }
+
   p {
-    // align-self: flex-start;
+    font-family: 'Courgette', cursive;
   }
 
   button {
-    @include size(100%);
     padding: 10px 15px;
-    background: transparent;
-    border: 0;
     outline: 0;
-    color: #bbb;
+    border: 0;
+    background: transparent;
+    color: #bbbbbb;
+
+    @include size(100%);
   }
 
   .scrollDown {
-    font-size: .5rem;
     position: absolute;
-    left: 50%;
     bottom: 10%;
+    left: 50%;
+    border: 1px solid rgba(102,217,239,.5);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: .5rem;
+    cursor: pointer;
     transform: translate(-50%);
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
-    color: #ffffff;
-    border: 1px solid rgba(102,217,239,.5);
-    border-radius: 5px;
-    cursor: pointer;
   }
 
   .bounce {
-    animation-name: bounce;
     transform-origin: center bottom;
+    animation-name: bounce;
   }
 }
