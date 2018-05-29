@@ -6,7 +6,9 @@ html {
   box-sizing: border-box;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -51,9 +53,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
-
 
 #PageTitle {
   color: #ffffff;
@@ -73,7 +73,7 @@ body {
 
     &::after {
       display: block;
-      margin: .5em 0 .5em 0;
+      margin: 0.5em 0 0.5em 0;
       width: 590px;
       height: 2px;
       background-color: #ffffff;
@@ -99,10 +99,10 @@ body {
     position: absolute;
     bottom: 10%;
     left: 50%;
-    border: 1px solid rgba(102,217,239,.5);
+    border: 1px solid rgba(102, 217, 239, 0.5);
     border-radius: 5px;
     color: #ffffff;
-    font-size: .5rem;
+    font-size: 0.5rem;
     cursor: pointer;
     transform: translate(-50%);
     animation-duration: 3s;
@@ -116,7 +116,6 @@ body {
   }
 }
 
-
 #DailyUI {
   .container {
     background-color: rgba(0, 0, 0, 0.7);
@@ -124,27 +123,63 @@ body {
     @include flex(row, center);
     @include size(100%);
 
-    .sectionTitle {
-      position: relative;
-      padding: 30px;
-      width: 50%;
-      // height: 100vh;
-      outline: 1px solid red;
-      color: #fff;
-
-      @include flex(column, center);
-
-      p {
-        width: 400px;
-      }
-    }
-
     .cards {
-      width: 50%;
+      width: 100vw;
       height: 100vh;
       outline: 1px solid blue;
 
-      @include flex(column, center);
+      @include flex(row, center);
     }
   }
+}
+
+// ===================
+
+.card {
+  width: 380px;
+  height: 468px;
+  padding: 1.75em 1.75em 0.1em 1.75em;
+  background-color: #353849;
+  border-radius: 5px;
+  margin: 0 20px;
+  color: #ffffff;
+
+  .image {
+    border-radius: 5px 5px 0 0;
+    display: block;
+    // margin-bottom: 1.75em;
+    margin-left: -1.75em;
+    margin-top: -1.75em;
+    position: relative;
+    width: calc(100% + 3.5em);
+    overflow: hidden;
+
+    img {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+    }
+  }
+
+  p {
+    line-height: 1.5em;
+    margin: 0 0 2em 0;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+
+  .link {
+    transition: all 3.25s;
+  }
+  .link:hover {
+    transform: scale(1.5) rotate(70deg);
+  }
+}
+
+h3.major {
+  padding-bottom: 1em;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
