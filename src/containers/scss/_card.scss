@@ -1,12 +1,12 @@
-
 .card {
   @include flex(column, flex-start);
-  margin: 0 20px;
+
   width: 370px;
   height: 440px;
+  margin: 0 20px;
+  color: #ffffff;
   border-radius: 5px;
   background-color: #353849;
-  color: #ffffff;
 
   .image {
     position: relative;
@@ -23,29 +23,27 @@
   }
 
   .title {
+    align-self: center;
+    width: calc(100% - 40px);
     padding-top: 10px;
     padding-bottom: 10px;
-    width: calc(100% - 40px);
     border-bottom: solid 2px rgba(255, 255, 255, .125);
-
-    align-self: center;
   }
 
   .desc {
+    width: calc(100% - 30px);
     margin-top: 5px;
     margin-left: 10px;
     padding: 10px;
-    width: calc(100% - 30px);
     line-height: 1.5rem;
   }
 
   .links {
+    align-self: flex-end;
     margin-top: auto;
     margin-right: 20px;
     margin-bottom: 15px;
     text-align: right;
-
-    align-self: flex-end;
 
     a {
       color: #ffffff;
@@ -54,21 +52,14 @@
     .circle {
       display: inline-block;
       margin: 0 5px;
+      transition: all .25s;
       text-align: center;
       font-size: 14px;
-      transition: all .25s;
 
       &:hover {
-        color: #ff6574;
         transform: scale(1.5) rotate(370deg);
+        color: #ff6574;
       }
     }
   }
 }
-
-
-
-
-
-
-

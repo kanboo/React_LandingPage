@@ -2,20 +2,14 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: inherit;
-
-margin: 0;
-
-padding: 0;
-
-font-family: 'Questrial', '微軟正黑體', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", "微軟正黑體", sans-serif;
+}
 
 body {
   font-size: 16px;
-
-line-height: 1.5;
-  }
+  line-height: 1.5;
+}
