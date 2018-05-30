@@ -1,0 +1,17 @@
+#PageProject {
+  .container {
+    @include size(100%);
+    @include flex(row, center);
+
+    background-color: rgba(0, 0, 0, .7);
+
+    .cards {
+      @include flex(row, center);
+
+      width: 100vw;
+      height: 100vh;
+
+      outline: 1px solid blue;
+    }
+  }
+}

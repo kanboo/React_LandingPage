@@ -8,9 +8,9 @@ import solids from '@fortawesome/fontawesome-free-solid';
 import 'animate.css/animate.min.css';
 import './scss/style.scss';
 
-import PureFullPage from './FullPagePackage/pureFullPage';
+import PureFullPage from './FullPagePlugins/pureFullPage';
 import PageTitle from './App/PageTitle';
-import DailyUI from './App/DailyUI';
+import PageProject from './App/PageProject';
 
 fontawesome.library.add(brands, solids);
 
@@ -30,7 +30,7 @@ export default class Main extends Component {
     return (
       <div id="pureFullPage">
         <PageTitle />
-        <DailyUI />
+        <PageProject />
 
         <section className="page">
           <p> Page 3 </p>

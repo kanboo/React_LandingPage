@@ -2,20 +2,21 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import Card from './Card';
 
-export default class DailyUI extends Component {
-  goNext = () => {
-    const navdots = document.querySelectorAll('.nav-dot');
-    navdots[1].click();
-  };
+import projectJson from './project.json';
+
+export default class PageProject extends Component {
 
   render() {
     return (
-      <section className="page" id="DailyUI">
+      <section className="page" id="PageProject">
         <div className="container">
           <div className="cards">
-            <Card />
-            <Card />
-            <Card />
+            {
+              projectJson.map(data =>
+                (<Card
+                  {...data}
+                />))
+            }
           </div>
         </div>
       </section>

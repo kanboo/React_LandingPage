@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The F2E - 前端修練精神時光屋",
+    "description": "一週挑戰一個修練主題，總計九週",
+    "imgUrl": "https://camo.githubusercontent.com/2ad6a29c0e2f1c6a6da4602ff3c1ce767f182cb1/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f70726f6a6563742d34303265382e61707073706f742e636f6d2f6f2f5468654632455f62616e6e65722e706e673f616c743d6d6564696126746f6b656e3d38333932356364362d623865652d346632392d393130302d643165653038373635663466",
+    "demoUrl": "",
+    "repoUrl": "",
+    "blogUrl": ""
+  },
+  {
+    "title": "DailyUI",
+    "description": "每天實作一個小成品",
+    "imgUrl": "https://pro2-bar-s3-cdn-cf3.myportfolio.com/47ddef406a3080fdc98b326c9607feb8/eb5744382351326d3799042fe7dfd98eafeb79e7bacc10a8e03e82f33d9ae19cb2e7b4a73939fbbd_rw_1920.png?h=7614a140ede55f6214a7886bb2631cf9",
+    "demoUrl": "",
+    "repoUrl": "",
+    "blogUrl": ""
+  },
+  {
+    "title": "Javascript30",
+    "description": "體驗原生Javascript的美",
+    "imgUrl": "https://i0.wp.com/softnshare.com/wp-content/uploads/2017/03/javascript30.png?fit=1200%2C558&ssl=1",
+    "demoUrl": "https://kanboo.github.io/JavaScript30/",
+    "repoUrl": "https://github.com/kanboo/JavaScript30",
+    "blogUrl": "https://kanboo.github.io/categories/JS/JS30/"
+  }
+]

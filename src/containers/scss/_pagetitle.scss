@@ -1,0 +1,58 @@
+#PageTitle {
+  @include flex(column, center);
+  color: #ffffff;
+
+  .container {
+    width: 960px;
+  }
+
+  h1 {
+    font-size: 3.25em;
+    .myname {
+      font-size: 4.5rem;
+      font-family: "Lobster", cursive;
+    }
+
+    &::after {
+      display: block;
+      margin: .5em 0 .5em 0;
+      width: 590px;
+      height: 2px;
+      background-color: #ffffff;
+      content: "";
+    }
+  }
+
+  p {
+    font-family: "Courgette", cursive;
+  }
+
+  button {
+    @include size(100%);
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    color: #bbbbbb;
+  }
+
+  .scrollDown {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    border: 1px solid rgba(102, 217, 239, .5);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: .5rem;
+    cursor: pointer;
+    transform: translate(-50%);
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  .bounce {
+    transform-origin: center bottom;
+    animation-name: bounce;
+  }
+}
